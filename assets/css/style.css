@@ -9,23 +9,123 @@
 
 header{
     margin: 0 auto;
+    height: 200px;
     background-color: blanchedalmond;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
+/*barra superiore*/
 nav{
     width: 60%;
+    background-color: cadetblue;
     display: flex;
-    background-color: blueviolet;
     justify-content: space-around;
-    margin: auto;
+}
+
+/*link nav bar*/
+.link{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
 }
 
 .container{
     width: 50%;
-    height: 200px;
-    margin: 1% auto;
+    height: 150px;
     background-color: aqua;
     text-align: center;
     border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+/*main*/
+
+.box{
+    height: 200px;
+    width: 100%;
+    background-color: lightgreen;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*contenitore per le immagini*/
+.pics{
+    height: 150px;
+    width: 30%;
+    background-color: pink;
+}
+
+/*contenitore per il testo*/
+.text{
+    height: 150px;
+    width: 20%;
+    background-color: lightsalmon;
+    border: 1px solid black;
+}
+
+
+/* quarta sezione del main*/
+
+.sec-4{
+    flex-direction: column;
+    height: 500px;
+}
+
+.sec-4 > .text, .sec-4 > .pics{
+    width: 50%;
+}
+
+
+/*footer*/
+
+footer{
+    height: 500px;
+    width: 100%;
+    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*contenitore dei 5 sub-box*/
+.f-box{
+    height: 250px;
+    width: 60%;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: space-around;
+}
+
+.f-sub-box{
+    border: 1px solid black;
+}
+
+/*per rendere il primo figlio più grosso*/
+.f-box .f-sub-box:nth-of-type(1) {flex-grow: 3;}
+.f-box .f-sub-box:nth-of-type(2) {flex-grow: 1;}
+.f-box .f-sub-box:nth-of-type(3) {flex-grow: 1;}
+.f-box .f-sub-box:nth-of-type(4) {flex-grow: 1;}
+.f-box .f-sub-box:nth-of-type(5) {flex-grow: 1;}
+
+/*sub-footer*/
+.sub-f{
+    height: 50px;
+    width: 60%;
+    border-top: 3px solid red;
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-f, .bottone-f{
+   
+    width: 100px;
+    background-color: blueviolet;
 }
