@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 /*header*/
 
 header{
@@ -28,10 +36,15 @@ nav{
 /*link nav bar*/
 .link{
     width: 50%;
-    display: flex;
-    justify-content: space-between;
     border: 1px solid red;
 }
+
+/*lista link nav bar*/
+ul li{
+    display: inline;
+    margin: 0 15px;
+}
+
 
 .container{
     width: 50%;
